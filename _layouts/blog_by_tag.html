@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+{% for data_tag in site.data.tags %}
+  {% if data_tag.slug == page.tag %}
+    {% assign tag = data_tag %}
+  {% endif %}
+{% endfor %}
+
+<h1>Articles by tag: {{ tag.name }}</h1>
+<div>
+	{% if site.tags[page.tag] %}
+	  {% for post in site.tags[page.tag] %}
+	    <p><a href="{{ post.url }}/">{{ post.title }}</a></p>
+	  {% endfor %}
+	{% else %}
+		<p>There are no posts for this tag.</p>
+	{% endif %}
+</div>
