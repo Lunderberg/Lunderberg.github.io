@@ -23,3 +23,12 @@ version:          2.1.0
 
 github:
   url:           https://github.com/Lunderberg
+
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      comments: true

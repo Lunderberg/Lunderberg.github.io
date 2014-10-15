@@ -3,6 +3,8 @@ layout: default
 title: Home
 ---
 
+{% include comment-count.html %}
+
 <div class="posts">
   {% for post in paginator.posts %}
   <div class="post">
@@ -12,7 +14,12 @@ title: Home
       </a>
     </h1>
 
-    <span class="post-date">{{ post.date | date_to_string }}</span>
+		<p>
+			<span class="post-date">{{ post.date | date_to_string }}</span>
+			{% if post.comments %}
+			  <span class="comment-link"><a href="{{ post.url }}#disqus_thread">Comments</a></span>
+			{% endif %}
+		</p>
 
     {{ post.content }}
 

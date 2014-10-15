@@ -8,8 +8,20 @@ layout: default
 
 <div class="post">
   <h1 class="post-title">{{ page.title }}</h1>
-  <span class="post-date">{{ page.date | date_to_string }}</span>
+	<p>
+		<span class="post-date">{{ page.date | date_to_string }}</span>
+		{% if page.comments %}
+		  <span class="comment-link"><a href="{{ page.url }}#disqus_thread">Comments</a></span>
+		{% endif %}
+	</p>
+
+
   {{ content }}
 
 	<p id="post-meta">{{ tags_content }}</p>
 </div>
+
+{% if page.comments %}
+  {% include comments.html %}
+  {% include comment-count.html %}
+{% endif %}
