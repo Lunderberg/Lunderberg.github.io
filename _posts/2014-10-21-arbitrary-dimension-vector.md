@@ -28,28 +28,51 @@ Whenever the calling code wants to access the internal representation,
 We could define accessors `X()`, `Y()`, and `Z()` for the common usages.
 If we make these accessors, we would want them to be available only when it is sensible.
 
-C++11 introduces `std::enable_if`.
-This is used to conditionally include templated code when some value is present.
+C++11 introduces `static_assert`.
+This is used to make a function valid only when certain conditions
 The following code then adds accessors that exist only when the dimension is present.
 
 ```c++
-template<typename = typename std::enable_if< N>=1 >::type>
-double& X(){return data[0];}
-template<typename = typename std::enable_if< N>=1 >::type>
-const double& X() const {return data[0];}
+double& X() {
+  static_assert(N>=1,"X available only for dimensions >= 1");
+  return data[0];
+}
 
-template<typename = typename std::enable_if< N>=2 >::type>
-double& Y(){return data[1];}
-template<typename = typename std::enable_if< N>=2 >::type>
-const double& Y() const {return data[1];}
+double& Y() {
+  static_assert(N>=2,"Y available only for dimensions >= 2");
+  return data[1];
+}
 
-template<typename = typename std::enable_if< N>=3 >::type>
-double& Z(){return data[2];}
-template<typename = typename std::enable_if< N>=3 >::type>
-const double& Z() const {return data[2];}
+double& Z() {
+  static_assert(N>=3,"Z available only for dimensions >= 3");
+  return data[2];
+}
 ```
 
-So long as we are using C++11 features, lets make the constructors be more convenient.
+Note that the check happens after a method is chosen, not before.
+Therefore, this cannot be used to make two different methods,
+each of which gets called according to the dimension.
+To do that, we would need to use `std::enable_if` instead.
+Though no such methods are used in this vector class,
+it could be used as follows.
+
+```c++
+template<unsigned int T = N>
+typename std::enable_if< T==1, int >::type
+magic_func(){return 1;}
+
+template<unsigned int T = N>
+typename std::enable_if< T!=1, int >::type
+magic_func(){return 2;}
+```
+
+The inner template is necessary to prevent the method from being determined when the class is determined.
+This would cause the entire class to be labelled as invalid.
+Instead, we only want the function to be labelled as invalid,
+and so we need to use a dummy template parameter to delay the method's determination until call-time.
+
+Back on the vector class,
+so long as we are using C++11 features, lets make the constructors be more convenient.
 So far, any calling code must first contruct a `std::array` before creating a `GVector`.
 It would be much more convenient if we could simply construct it as `GVector<2> gv(1,2);`.
 In addition, this constructor should be available only with the correct number of arguments.
@@ -64,3 +87,6 @@ GVector(Args... args) : data{double(args)...} {
                 "Arguments passed do not match templated size");
 }
 ```
+
+This class is available in its current form
+ on github at [my current project](http://github.com/Lunderberg/omnicolor-images/blob/master/include/GVector.hh).
