@@ -77,6 +77,7 @@ The printed value is the color code to be used.
 Place this script somewhere in your PATH.
 
 Now, in my `.bashrc`, adding the following lines.
+
 ```bash
 # Select a color for the server, random based on hostname.
 if which server_name_color.py > /dev/null; then
