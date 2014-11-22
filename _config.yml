@@ -27,6 +27,12 @@ version:          2.1.0
 github:
   url:           https://github.com/Lunderberg
 
+atom:
+  url: /atom.xml
+
+rss:
+  url: /feed.xml
+
 
 defaults:
   -

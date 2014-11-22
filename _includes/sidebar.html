@@ -27,6 +27,11 @@
       {% endfor %}
 
       <a class="sidebar-nav-item" href="{{ site.github.url }}">GitHub</a>
+
+      <p>
+        <a class="sidebar-nav-item" style="display:inline" href="{{ site.atom.url }}">Atom</a> <b>/</b>
+        <a class="sidebar-nav-item" style="display:inline" href="{{ site.rss.url }}">RSS</a>
+      </p>
     </nav>
 
     <p>&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
