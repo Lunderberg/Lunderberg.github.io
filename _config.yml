@@ -1,5 +1,6 @@
 # Dependencies
-markdown:         redcarpet
+#markdown:         redcarpet
+markdown:         kramdown
 redcarpet:
   extensions: ["tables","no_intra_emphasis","autolink"]
 
