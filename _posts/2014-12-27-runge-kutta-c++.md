@@ -4,7 +4,7 @@ title: Runge-Kutta in C++
 tags: [math, c++]
 ---
 
-In my [previous post]({% post_url 2014-12-22-runge-kutta %}),
+In my [previous post]({% post_url 2014-12-23-runge-kutta %}),
   I went through the benefits of using Runge-Kutta for numerical solving of differential equations.
 Now, a sample implementation.
 
