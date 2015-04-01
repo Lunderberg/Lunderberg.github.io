@@ -12,3 +12,6 @@
 
 - slug: math
   name: Mathematics
+
+- slug: lua
+  name: Lua
