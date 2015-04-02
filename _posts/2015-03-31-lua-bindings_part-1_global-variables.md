@@ -113,4 +113,5 @@ assert(x == 1);
 ```
 
 That function call is still rather ugly.
-We'll be focusing on that in the next post.
+We'll be focusing on that in the
+  [next post]({% post_url 2015-04-01-lua-bindings_part-2_lua-function-calls %}).
