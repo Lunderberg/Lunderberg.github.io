@@ -93,4 +93,5 @@ assert(output == 12);
 ```
 
 Now that the we can call Lua functions from C++,
-  the next step is calling C++ functions from Lua.
+  the next step is [calling C++ functions from Lua]
+  ({% post_url 2015-04-02-lua-bindings_part-3_cpp-function-calls %}).
