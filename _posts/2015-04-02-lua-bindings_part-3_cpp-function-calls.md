@@ -180,4 +180,5 @@ Now, C++ functions can be exposed for use from within Lua.
 With trivial modifications, this can be extended to any `std::function`,
   not just C-style function pointers.
 
-Next up, starting to expose C++ classes for use in Lua.
+After cleaning up a [few small details]({% post_url 2015-04-07-lua-bindings_part-4_small-details %}),
+  we'll be starting to expose C++ classes for use in Lua.
