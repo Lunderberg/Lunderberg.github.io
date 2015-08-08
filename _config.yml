@@ -20,7 +20,7 @@ author:
   name:           'Eric Lunderberg'
   url:            https://github.com/Lunderberg
 
-paginate:         5
+paginate:         10
 
 # Custom vars
 version:          2.1.0

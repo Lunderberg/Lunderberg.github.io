@@ -1,0 +1,33 @@
+---
+layout: default
+title: Archive
+---
+
+<div class="archive-by-tag">
+  <h1 class="page-title">Archive by Tag</h1>
+  {% assign sorted_tags = (site.data.tags | sort: "name") %}
+  {% for tag in sorted_tags %}
+      <a href="/tags/{{ tag.slug }}/">{{ tag.name }} </a> {% if forloop.last == false %}, {% endif %}
+  {% endfor %}
+</div>
+
+<hr/>
+
+<div class="archive-by-date">
+  <h1 class="page-title">Archive by Date</h1>
+  <table>
+    <th>Date</th>
+    <th>Title</th>
+    <th>Tags</th>
+    {% for post in site.posts %}
+    <tr>
+      <td style="white-space:nowrap"> {{ post.date | date: "%Y-%m-%d" }} </td>
+      <td> <a href="{{ post.url }}">{{ post.title }}</a> </td>
+      <td>
+        {% include post-tags.md %}
+        {{ tags_content }}
+      </td>
+    </tr>
+    {% endfor %}
+  </table>
+</div>

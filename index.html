@@ -14,17 +14,23 @@ title: Home
       </a>
     </h1>
 
-		<p>
-			<span class="post-date">{{ post.date | date_to_string }}</span>
-			{% if post.comments %}
-			  <span class="comment-link"><a href="{{ post.url }}#disqus_thread">Comments</a></span>
-			{% endif %}
-		</p>
+    <p>
+      <span class="post-date">{{ post.date | date_to_string }}</span>
+      {% if post.comments %}
+        <span class="comment-link"><a href="{{ post.url }}#disqus_thread">Comments</a></span>
+      {% endif %}
+    </p>
 
-    {{ post.content }}
+    {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
 
-		{% include post-tags.md %}
-		<p id="post-meta">{{ tags_content }}</p>
+    {% capture content_size %} {{ post.content | size }} {% endcapture %}
+    {% capture excerpt_size %} {{ post.excerpt | size }} {% endcapture %}
+    {% if excerpt_size != content_size %}
+      <a href="{{ post.url }}">Read more</a>
+    {% endif %}
+
+    {% include post-tags.md %}
+    <p id="post-meta">Tags: {{ tags_content }}</p>
   </div>
   {% endfor %}
 </div>

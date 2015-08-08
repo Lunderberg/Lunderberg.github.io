@@ -1,5 +1,5 @@
 {% if post.tags.size > 0 %}
-  {% capture tags_content %} Tags: {% endcapture %}
+  {% capture tags_content %}{% endcapture %}
   {% for post_tag in post.tags %}
     {% for data_tag in site.data.tags %}
       {% if data_tag.slug == post_tag %}
