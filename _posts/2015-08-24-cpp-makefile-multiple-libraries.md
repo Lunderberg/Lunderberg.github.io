@@ -2,9 +2,11 @@
 layout: post
 title: C++ Makefile, Multiple Libraries
 tags: [c++, make]
+date: 2015-08-24 20:00
 ---
 
-Previously, we made a makefile to compile programs against a single library.
+[Previously]({% post_url 2015-08-10-cpp-makefile-library %}),
+we made a makefile to compile programs against a single library.
 Now, we will extend that makefile to compile multiple libraries.
 
 First, we want to make a few variables to determine the compilation flags,
