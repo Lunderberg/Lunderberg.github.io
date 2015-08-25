@@ -198,4 +198,4 @@ We can now add additional `.cc` files, either in the main directory,
   or in the `src` directory, and the makefile will react accordingly.
 
 A commented version of this makefile can be found at
-  [my github repository](https://github.com/Lunderberg/sample_makefiles/blob/master/Makefile.simple).
+  [my github repository](https://github.com/Lunderberg/sample_makefiles/blob/8e30d524d5c6922bcabfd0dd583e01225dcb3953/Makefile.simple).

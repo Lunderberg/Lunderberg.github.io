@@ -67,4 +67,4 @@ $(foreach lib,$(LIBRARY_FOLDERS),$(eval $(call library_variables,$(lib))))
 
 With this, we can define additional flags for each library, without needing to edit the makefile itself.
 As before, the full makefile can be found on
-  [github](https://github.com/Lunderberg/sample_makefiles/blob/master/Makefile.multiple_libraries).
+  [github](https://github.com/Lunderberg/sample_makefiles/blob/8e30d524d5c6922bcabfd0dd583e01225dcb3953/Makefile.multiple_libraries).

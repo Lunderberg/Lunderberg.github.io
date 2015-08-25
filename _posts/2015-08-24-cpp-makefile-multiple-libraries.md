@@ -65,4 +65,4 @@ The `.SECONDEXPANSION:` line is needed to enable this feature.
 Now, each folder starting with `lib` will be compiled into a separate shared library.
 Each include folder is added to the compiler flags.
 The full makefile, complete with comments, is available on
-  [github](https://github.com/Lunderberg/sample_makefiles/blob/master/Makefile.multiple_libraries).
+  [github](https://github.com/Lunderberg/sample_makefiles/blob/8e30d524d5c6922bcabfd0dd583e01225dcb3953/Makefile.multiple_libraries).

@@ -107,4 +107,4 @@ This will take all the source files present in the `src` directory,
   compile them into a shared library,
   then build all executables based on that library.
 A commented version of this makefile can be found at
-  [my github repository](https://github.com/Lunderberg/sample_makefiles/blob/master/Makefile.single_library).
+  [my github repository](https://github.com/Lunderberg/sample_makefiles/blob/8e30d524d5c6922bcabfd0dd583e01225dcb3953/Makefile.single_library).
