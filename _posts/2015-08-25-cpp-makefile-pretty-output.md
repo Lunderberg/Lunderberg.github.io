@@ -2,6 +2,7 @@
 layout: post
 title: C++ Makefile, Pretty Output
 tags: [c++, make]
+date: 2015-08-25 08:40
 ---
 
 All the previous posts about makefiles have focused on flexibility and ease of use.
