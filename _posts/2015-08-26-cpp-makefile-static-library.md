@@ -88,4 +88,4 @@ endif
 Now, we can compile the code to either a shared or a static library,
   depending on what is needed for a particular project.
 The full makefile can be found on
-  [github](https://github.com/Lunderberg/sample_makefiles/blob/e34c997e60d585cc8956b2504495134b57966b09/Makefile)
+  [github](https://github.com/Lunderberg/sample_makefiles/blob/a608e5979d650247dfcf994fc3863982f5e1fe5b/Makefile).
