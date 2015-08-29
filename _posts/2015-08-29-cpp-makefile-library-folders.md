@@ -2,6 +2,7 @@
 layout: post
 title: C++ Makefile, Library Folders
 tags: [c++, make]
+date: 2015-08-29 08:00
 ---
 
 [Earlier]({% post_url 2015-08-24-cpp-makefile-library-specific-flags %}),
