@@ -18,3 +18,6 @@
 
 - slug: make
   name: Make
+
+- slug: emacs
+  name: Emacs

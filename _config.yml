@@ -15,6 +15,7 @@ tagline:          'The Lunderblog'
 description:      'Assorted wanderings through physics, math, and programming'
 url:              http://www.lunderberg.com
 baseurl:          /
+gems:             [jekyll-paginate]
 
 author:
   name:           'Eric Lunderberg'
