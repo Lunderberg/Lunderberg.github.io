@@ -21,3 +21,6 @@
 
 - slug: emacs
   name: Emacs
+
+- slug: recipes
+  name: Recipes
