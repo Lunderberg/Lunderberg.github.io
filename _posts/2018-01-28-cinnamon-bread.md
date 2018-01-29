@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Blueberry Pie
+title: Cinnamon Bread
 tags: [recipes]
 ---
 
