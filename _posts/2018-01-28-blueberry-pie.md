@@ -13,6 +13,6 @@ tags: [recipes]
 * 1 tablespoon almonds extract
 * 1 quart blueberries
 
-Boil water, sugar, butter, and flour.  Cool and add vanilla and
-almond.  Pour over blueberries and place in shell.  Not good for
-frozen berries.
+Melt butter, then mix flour into melted butter.  Add water and sugar,
+then bring to a boil.  Cool and add vanilla and almond.  Pour over
+blueberries and place in shell.  Not good for frozen berries.
