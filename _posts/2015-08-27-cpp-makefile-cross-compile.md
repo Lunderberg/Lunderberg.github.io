@@ -4,7 +4,7 @@ title: C++ Makefile, Cross-Compiling
 tags: [c++, make]
 ---
 
-I have written one [previous post]({% post_url 2014-12-30-cross-platform-c++ %}) on cross compiling,
+I have written one [previous post]({% post_url 2014-12-30-cross-platform-cpp %}) on cross compiling,
   which used the scons build system.
 However, scons is not universally installed, and has some issues with larger projects.
 Here, I will use the same strategy for cross-compiling using mingw-w64,
