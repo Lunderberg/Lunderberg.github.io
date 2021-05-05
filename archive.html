@@ -4,9 +4,9 @@ title: Archive
 ---
 
 <div class="archive-by-tag">
-  {% assign sorted_tags = (site.data.tags | sort: "name") %}
+  {% assign sorted_tags = site.data.tags | sort: "name" %}
   {% for tag in sorted_tags %}
-      <a href="/tags/{{ tag.slug }}/">{{ tag.name }} </a> {% if forloop.last == false %}, {% endif %}
+      <a href="/tags/{{ tag.slug }}/">{{ tag.name }}</a>{% if forloop.last == false %}, {% endif %}
   {% endfor %}
 </div>
 

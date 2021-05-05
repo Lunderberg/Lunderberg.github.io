@@ -3,6 +3,7 @@
 markdown:         kramdown
 redcarpet:
   extensions: ["tables","no_intra_emphasis","autolink","footnotes"]
+plugins: [jekyll-paginate]
 
 highlighter:      rouge
 
