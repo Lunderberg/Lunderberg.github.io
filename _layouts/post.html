@@ -16,13 +16,4 @@ layout: default
 
   {{ content }}
 
-  {% if page.comments %}
-    </br><span class="comment-link"><a href="{{ page.url }}#disqus_thread">Comments</a></span>
-  {% endif %}
-
 </div>
-
-{% if page.comments %}
-  {% include comments.html %}
-  {% include comment-count.html %}
-{% endif %}
