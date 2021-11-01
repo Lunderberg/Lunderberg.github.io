@@ -9,7 +9,7 @@ tags: [recipes]
 Crust
 -----
 
-* 180 g water (0.75 cups)
+* 180 g warm water (0.75 cups)
 * 20 g sugar (1 tablespoon)
 * 5 g yeast (1/2 teaspoon)
 * 7 g salt (3/4 teaspoon)
@@ -17,10 +17,12 @@ Crust
 * 80 g warm butter (6 tablespoons)
 * 450 g flour (3 cups)
 
-Mix all ingredients in a bowl.  Stop once the mixture is evenly mixed,
-and avoid any additional kneading.  The goal is for the crust to be
-almost crumbly, and additional kneading adds unwanted strength to the
-dough.
+Mix warm water, sugar, and yeast in a large bowl.  Let sit for 15-20
+minutes to proof the yeast, after which bubbles should start to form
+on top.  Mix all remaining ingredients into the yeast mixture.  Stop
+once the mixture is evenly mixed, and avoid any additional kneading.
+The goal is for the crust to be almost crumbly, and additional
+kneading adds unwanted strength to the dough.
 
 Cover, place in fridge, and allow to rise.  Should have at least an
 hour or two, but a day or two is ideal.
